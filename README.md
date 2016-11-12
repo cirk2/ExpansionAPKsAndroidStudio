@@ -8,6 +8,7 @@ So this is a library of pre-imported projects, which were first loaded in to ecl
 #Fixes
 
 `my_fixes` branch contains patches to the original, which is found in `master`. I recommend using `my_fixes` branch.
+Addendum: Added fixes to get the libraries compiling with Build Tools 25
 
 ##Zip file
 
