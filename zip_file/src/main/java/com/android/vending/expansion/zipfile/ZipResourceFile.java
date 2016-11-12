@@ -189,7 +189,7 @@ public class ZipResourceFile {
         addPatchFile(zipFileName);
     }
 
-    ZipEntryRO[] getEntriesAt(String path) {
+    public ZipEntryRO[] getEntriesAt(String path) {
         Vector<ZipEntryRO> zev = new Vector<ZipEntryRO>();
         Collection<ZipEntryRO> values = mHashMap.values();
         if (null == path)
