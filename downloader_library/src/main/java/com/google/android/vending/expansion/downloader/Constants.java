@@ -28,7 +28,7 @@ public class Constants {
     public static final String TAG = "LVLDL";
 
     /**
-     * Expansion path where we store obb files
+     * Expansion path where we store obb files, only effective on sVersions < Honeycomb
      */
     public static final String EXP_PATH = File.separator + "Android"
             + File.separator + "obb" + File.separator;

@@ -218,9 +218,21 @@ public class Helpers {
         return path;
     }
 
+    /**
+     * Generates the path for the obb file to be saved to. Since Honeycomb the dir can be retrieved
+     * from the context.
+     * @param c Context
+     * @return path
+     */
     static public String getSaveFilePath(Context c) {
-        File root = Environment.getExternalStorageDirectory();
-        String path = root.toString() + Constants.EXP_PATH + c.getPackageName();
+        String path = "";
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            File root = c.getObbDir();
+            path = root.getAbsolutePath();
+        }else {
+            File root = Environment.getExternalStorageDirectory();
+            path = root.toString() + Constants.EXP_PATH + c.getPackageName();
+        }
         return path;
     }
 
