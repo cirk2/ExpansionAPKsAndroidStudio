@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 15
-    buildToolsVersion "23.0.0 rc2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.example.expansion.downloader"
         minSdkVersion 5
-        targetSdkVersion 15
+        targetSdkVersion 25
     }
 
     buildTypes {
