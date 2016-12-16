@@ -16,15 +16,14 @@
 
 package com.google.android.vending.expansion.downloader.impl;
 
-import com.android.vending.expansion.downloader.R;
-import com.google.android.vending.expansion.downloader.Helpers;
-
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.graphics.BitmapFactory;
 import android.view.View;
 import android.widget.RemoteViews;
+
+import com.android.vending.expansion.downloader.R;
+import com.google.android.vending.expansion.downloader.Helpers;
 
 public class V3CustomNotification implements DownloadNotification.ICustomNotification {
 

@@ -16,8 +16,9 @@
 
 package com.google.android.vending.expansion.downloader;
 
-import com.google.android.vending.expansion.downloader.impl.DownloaderService;
 import android.os.Messenger;
+
+import com.google.android.vending.expansion.downloader.impl.DownloaderService;
 
 /**
  * This interface is implemented by the DownloaderService and by the
