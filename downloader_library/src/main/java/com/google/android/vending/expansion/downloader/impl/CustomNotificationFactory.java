@@ -22,9 +22,10 @@ package com.google.android.vending.expansion.downloader.impl;
  */
 public class CustomNotificationFactory {
     static public DownloadNotification.ICustomNotification createCustomNotification() {
-        if (android.os.Build.VERSION.SDK_INT > 13)
-            return new V14CustomNotification();
-        else
-            return new V3CustomNotification();
+        return new CompatCustomNotification();
+        //if (android.os.Build.VERSION.SDK_INT > 13)
+        //    return new V14CustomNotification();
+        //else
+        //    return new V3CustomNotification();
     }
 }
